@@ -1,9 +1,10 @@
-## Student Grades API
+# Student Grades API
 REST-сервис на FastAPI для загрузки CSV-файлов с успеваемостью студентов, сохранения данных в PostgreSQL и выполнения аналитических запросов.
 
 ## API эндпоинты
 ### POST /upload-grades
 Загрузка CSV-файла.
+
 Response
 ```
 {
@@ -17,6 +18,7 @@ Response
 ### GET /students/more-than-3-twos
 
 Студенты, у которых оценка 2 встречается больше 3 раз
+
 Response
 ```
 [
@@ -31,6 +33,7 @@ Response
 ### GET /students/less-than-5-twos
 Студенты, у которых оценка 2 встречается меньше 5 раз
 
+
 Response
 ```
 [
@@ -41,8 +44,9 @@ Response
 ]
 ```
 
- # Запуск проекта (Docker)
-Клонировать репозиторий
+# Запуск проекта (Docker)
+Клонировать репозиторий 
+Для успешного запуска контейнера должны быть свободны порты 5432 для postgreSQL и 8000 для api.
 ```
 git clone https://github.com/Gypl/StudentsMLProject.git
 cd StudentsMLProject

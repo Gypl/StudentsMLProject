@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   db:
-    image: postgres:15
+    image: postgres:17
     environment:
       POSTGRES_DB: grades
       POSTGRES_USER: postgres
